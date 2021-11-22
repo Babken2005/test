@@ -1,0 +1,74 @@
+.wave {
+  margin-right: 15px;
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+.stepTop {
+  margin-top: 35px;
+}
+.stepBottom {
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+.stepCenter {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.stepCenter h4 {
+  font-weight: 600;
+  line-height: 25px;
+}
+.getUserNameButton {
+  width: 200px;
+  height: 40px;
+  background-color: #5676b1;
+  border-radius: 32px;
+}
+.getUserNameButton h4 {
+  font-weight: 500;
+  color: white;
+}
+.bx-right-arrow-alt {
+  color: white;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.inviteText {
+  font-size: 13px;
+  color: #5676b1;
+  font-weight: 600;
+  margin-top: 10px;
+}
+@media (max-width:920px) {
+  .step {
+    background-color: none;
+  }
+  .stepTop {
+    margin-top: 20px;
+  }
+  .stepBottom {
+    margin-bottom: 20px;
+  }
+  .stepCenter {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
